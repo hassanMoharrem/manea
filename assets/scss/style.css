@@ -1,0 +1,278 @@
+:root {
+  --main: #4286f4;
+}
+
+@font-face {
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-family: "main";
+}
+:root {
+  --main: #FFFFFF;
+  --sub: #ACB0C3;
+  --label:#F2F2F2;
+  --sub-href: #797D90;
+  --primary: #5E8BF6;
+  --bg-main: #1C1F2E;
+  --bg-sub: #1F2336;
+  --shadow-main: 0px 4px 8px rgba(11, 8, 8, 0.17);
+  --shadow-sidebar: 0px 8px 16px rgba(11, 8, 8, 0.17);
+  --shadow-card: 0px 4px 4px #1D2032;
+  --shadow-input: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-tabs: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  --rounded-main: 22px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "main", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-main);
+  color: var(--main);
+  font-family: "main", sans-serif;
+  font-weight: 600;
+}
+body a {
+  color: var(--sub-href) !important;
+  text-decoration: none;
+}
+body a :hover {
+  color: var(--sub-href) !important;
+}
+body .text-label {
+  color: var(--label);
+}
+body .text-muted {
+  color: var(--sub);
+}
+body .font-17 {
+  font-size: 17px;
+}
+body .font-25 {
+  font-size: 25px;
+}
+body .font-10 {
+  font-size: 10px;
+  font-weight: 400;
+}
+body .font-13 {
+  font-size: 13px;
+}
+body .font-16 {
+  font-size: 16px !important;
+}
+body .fw-400 {
+  font-weight: 400;
+  line-height: 20px;
+}
+body .font-14 {
+  font-size: 14px !important;
+}
+body .bg-sub {
+  background-color: var(--bg-sub);
+}
+body .text-primary {
+  color: var(--primary) !important;
+}
+body .border-primary {
+  border-color: var(--primary);
+}
+body .padding-card-scan {
+  padding: 15px 30px 30px 30px;
+}
+body .card-padding-statistics {
+  padding: 56px 20px 60px 20px;
+}
+body .padding-card-progress {
+  padding: 38px 47px 38px 47px;
+}
+body .shadow-card {
+  box-shadow: var(--shadow-card);
+}
+body .shadow-input {
+  box-shadow: var(--shadow-input);
+}
+body .bg-button {
+  background-image: linear-gradient(to right, #5A29D6, #3859EE);
+}
+body .rounded-8 {
+  border-radius: 8px !important;
+}
+body .btn:hover {
+  color: var(--label);
+}
+body .border-muted {
+  border-color: rgba(121, 125, 144, 0.1) !important;
+}
+body header {
+  background-color: var(--bg-main);
+  box-shadow: var(--shadow-main);
+  padding: 20px 0 !important;
+}
+body select {
+  background-color: var(--bg-sub) !important;
+  width: 112px !important;
+  border: 0 !important;
+  font-size: 13px !important;
+  display: inline-block !important;
+  color: var(--sub) !important;
+  font-family: "main", sans-serif !important;
+  padding: 10px 40px 10px 15px !important;
+  border-radius: 6px !important;
+}
+body select option:checked {
+  color: var(--sub);
+}
+body .form-select:focus {
+  border: 0 !important;
+  box-shadow: 0 0 0 !important;
+}
+body main .width-94 {
+  width: 94px;
+  background-color: var(--bg-main);
+  box-shadow: var(--shadow-sidebar);
+  min-height: calc(100vh - 81px);
+}
+body main .padding-input {
+  padding: 11px 15px;
+}
+body main .padding-button {
+  padding: 11px 60px;
+}
+body main .padding-button-cancel {
+  padding: 11px 45px;
+}
+body main .pt-80 {
+  padding-top: 80px;
+}
+body main .pt-50 {
+  padding-top: 50px !important;
+}
+body main .pb-50 {
+  padding-bottom: 50px;
+}
+body main .mb-30 {
+  margin-bottom: 30px;
+}
+body main .width-calc {
+  background-color: var(--bg-main);
+  box-shadow: var(--shadow-main);
+  width: calc(100% - 91px);
+  min-height: calc(100vh - 81px);
+  margin-top: 5px;
+  margin-left: 5px;
+}
+body main .width-calc .card-padding {
+  background-color: var(--bg-sub);
+  padding: 44px 26px 122px 26px;
+}
+body main .width-calc .rounded-card {
+  border-radius: var(--rounded-main);
+}
+body main .width-calc .rounded-top-4 {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+body main .width-calc .first-card {
+  background-image: url("../images/bg-assets.svg");
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+body main .width-calc .second-card {
+  background-image: url("../images/bg-devices.svg");
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+body main .width-calc .third-card {
+  background-image: url("../images/bg-threats.svg");
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+body main .width-calc .rounded-card-scan {
+  border-radius: 12px;
+}
+body main .width-calc .width-70 {
+  width: 70px;
+}
+body main .width-calc .height-70 {
+  height: 70px;
+}
+body main .width-calc .height-100 {
+  height: 100px;
+}
+body main .width-calc .max-w-75 {
+  max-width: 75%;
+}
+body main .width-calc .w-80 {
+  width: 80%;
+}
+body main .width-calc .height-85 {
+  height: 85px;
+}
+body main .width-calc .w-20 {
+  width: 20%;
+}
+body main .width-calc .progress {
+  height: 5px;
+}
+body main .width-calc .rounded-right-3 {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+body main .width-calc .progress {
+  background-color: #2D3143;
+}
+body main .width-calc .bg-sub-progress {
+  background-color: #242738;
+}
+body main .width-calc .bg-success {
+  background-color: #0DA036 !important;
+}
+body main .width-calc .bg-warning {
+  background-color: #FFD56B;
+}
+body main .width-calc .bg-danger {
+  background-color: #F94F38 !important;
+}
+body main .width-calc .bg-very-danger {
+  background-color: #FF0000;
+}
+body main .width-calc .bg-danger-progress-circle {
+  background-color: #DE2647 !important;
+}
+body main .width-calc .form-control:visited {
+  outline: none !important;
+}
+body main .width-calc .form-control:focus {
+  background-color: var(--bg-sub);
+  box-shadow: var(--shadow-input);
+  color: var(--label);
+  font-size: 14px;
+  border: 0 !important;
+}
+body main .width-calc .nav-tabs .nav-item.show .nav-link, body main .width-calc .nav-tabs .nav-link.active {
+  color: var(--label);
+  background-color: var(--bg-main);
+  border: 1px solid transparent !important;
+}
+body main .width-calc .nav-tabs .nav-link:focus, body main .width-calc .nav-tabs .nav-link:hover {
+  color: var(--label);
+  border: 1px solid transparent !important;
+}
+body main .width-calc .nav-tabs .nav-item .nav-link {
+  padding: 16px 60px;
+  margin: 0 !important;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="theme-color" content="#000000"/>
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+<header>
+    <div class="container g-0">
+        <div class="row g-0">
+            <div class="col-md-6 my-2 my-md-auto">
+                <img src="assets/images/logo.png" width="36" height="41" alt="manea logo">
+                <h5 class="font-size-20 d-inline-block ms-1 align-middle mb-0">Manea</h5>
+            </div>
+            <div class="col-md-6 my-2 my-md-auto text-end">
+                <select class="form-select d-inline-block" aria-label="Default select example">
+                    <option value="en" selected>English</option>
+                    <option value="ar">Arabic</option>
+                </select>
+                <a href="" class="ms-3"><img src="assets/images/moon.svg" width="15" alt=""></a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="main d-flex">
+        <div class="sidebar width-94">
+            <div class="text-center position-relative h-100 pb-5">
+                <a href="" class="pt-50 d-block"><img src="assets/images/home.svg" width="24" alt=""></a>
+                <a href="" class="pt-50 d-block"><img src="assets/images/asset-active.svg" width="24" alt=""></a>
+                <a href="" class="pt-50 d-block"><img src="assets/images/shield.svg" width="23" alt=""></a>
+                <a href="" class="pt-50 d-block"><img src="assets/images/bug.svg" width="23" alt=""></a>
+                <a href="" class="pt-50 d-block"><img src="assets/images/global.svg" width="23" alt=""></a>
+                <a href="" class="pt-50 d-block"><img src="assets/images/support.svg" width="23" alt=""></a>
+                <a href="" class="pt-50 d-block"><img src="assets/images/report.svg" width="23" alt=""></a>
+                <a href="" class="pt-80 d-block"><img src="assets/images/logout.svg" width="23" alt=""></a>
+            </div>
+        </div>
+        <div class="width-calc ps-2 pt-4 pb-5">
+            <div class="row w-100 mx-auto justify-content-center">
+                <div class="col-md-11">
+                    <ul class="nav nav-tabs border-0 mt-4 bg-sub" id="myTab" role="tablist">
+                        <li class="nav-item p-1 " role="presentation">
+                            <button class="nav-link rounded-card-scan text-label active" id="all-asset" data-bs-toggle="tab" data-bs-target="#assets" type="button" role="tab" aria-controls="assets" aria-selected="true">All Assets</button>
+                        </li>
+                        <li class="nav-item p-1 " role="presentation">
+                            <button class="nav-link rounded-card-scan text-label" id="archived-assets" data-bs-toggle="tab" data-bs-target="#archived" type="button" role="tab" aria-controls="archived" aria-selected="false">Archived Assets  </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-3" id="myTabContent">
+                        <div class="tab-pane fade show active" id="assets" role="tabpanel" aria-labelledby="all-asset">
+                            <form action="">
+                                <div class="mt-2 mb-4 w-20 d-inline-block">
+                                    <input type="text" class="form-control border border-muted shadow-input padding-input mt-2 bg-sub text-label font-14 rounded-8" placeholder="Assets Name">
+                                </div>
+                                <div class="mt-2 mb-4 w-20 ms-3 d-inline-block">
+                                    <select class="form-select border border-muted padding-input w-100 rounded-8 font-16" aria-label="Default select example">
+                                        <option value="en" selected>All</option>
+                                        <option value="ar">Arabic</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn padding-input px-4 font-16 text-muted bg-sub border border-muted ms-3 font-16 rounded-8">Cancel</button>
+
+                            </form>
+                            <!--      First Dev To show Title Card Likes <thead> in table      -->
+                            <div class="bg-sub shadow-input px-3 py-3 rounded-top-4">
+                                <div class="row mx-auto w-100">
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-16 mb-0 ps-4">Asset Name</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-16 mb-0">Owner Asset</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-16 mb-0">Added Date</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-16 mb-0">Asset type</h5>
+                                    </div>
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-16 mb-0 ps-4">Actions</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--      End This Dev                      -->
+                            <!--      All Dev in under for loop                      -->
+                            <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4">
+                                <div class="row mx-auto w-100">
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <img src="assets/images/adobe-xd.svg" width="18" class="align-middle " alt="">
+                                        <div class="d-inline-block max-w-75 text-start align-top ms-1">
+                                            <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Adobe xd</h5>
+                                            <span class="text-muted font-14 mb-0 text-truncate fw-400 ms-1 align-middle">2.3</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">Darrell Steward</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">2020-01-01</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0 ps-4"><img src="assets/images/library.svg" width="18" alt=""></h5>
+                                    </div>
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">
+                                            <a href="" class="mx-2"><img src="assets/images/show.svg" width="24" alt=""></a>
+                                            <a href="" class="mx-2"><img src="assets/images/edit.svg" width="16" alt=""></a>
+                                            <a href="" class="mx-2"><img src="assets/images/delete.svg" width="16" alt=""></a>
+                                        </h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4">
+                                <div class="row mx-auto w-100">
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <img src="assets/images/xampp.svg" width="18" class="align-middle " alt="">
+                                        <div class="d-inline-block max-w-75 text-start align-top ms-1">
+                                            <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Xampp Xampp Xampp</h5>
+                                            <span class="text-muted font-14 mb-0 text-truncate fw-400 ms-1 align-middle">2.3.10</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">Eleanor Pena</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">2020-02-02</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0 ps-4"><img src="assets/images/type-assets.svg" width="18" alt=""></h5>
+                                    </div>
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">
+                                            <a href="" class="mx-2"><img src="assets/images/show.svg" width="24" alt=""></a>
+                                            <a href="" class="mx-2"><img src="assets/images/edit.svg" width="16" alt=""></a>
+                                            <a href="" class="mx-2"><img src="assets/images/delete.svg" width="16" alt=""></a>
+                                        </h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4">
+                                <div class="row mx-auto w-100">
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <img src="assets/images/visual-studio.svg" width="18" class="align-middle " alt="">
+                                        <div class="d-inline-block max-w-75 text-start align-top ms-1">
+                                            <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Visual Studio </h5>
+                                            <span class="text-muted font-14 mb-0 text-truncate fw-400 ms-1 align-middle">2.3.10</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">Eleanor Pena</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">2020-02-02</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0 ps-4"><img src="assets/images/type-assets.svg" width="18" alt=""></h5>
+                                    </div>
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">
+                                            <a href="" class="mx-2"><img src="assets/images/show.svg" width="24" alt=""></a>
+                                            <a href="" class="mx-2"><img src="assets/images/edit.svg" width="16" alt=""></a>
+                                            <a href="" class="mx-2"><img src="assets/images/delete.svg" width="16" alt=""></a>
+                                        </h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--      End Dev and for loop                      -->
+                        </div>
+                        <div class="tab-pane fade" id="archived" role="tabpanel" aria-labelledby="archived-assets">
+                            <form action="">
+                                <div class="mt-2 mb-4 w-20 d-inline-block">
+                                    <input type="text" class="form-control border border-muted shadow-input padding-input mt-2 bg-sub text-label font-14 rounded-8" placeholder="Assets Name">
+                                </div>
+                                <div class="mt-2 mb-4 w-20 ms-3 d-inline-block">
+                                    <select class="form-select border border-muted padding-input w-100 rounded-8 font-16" aria-label="Default select example">
+                                        <option value="en" selected>All</option>
+                                        <option value="ar">Arabic</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn padding-input px-4 font-16 text-muted bg-sub border border-muted ms-3 font-16 rounded-8">Cancel</button>
+
+                            </form>
+                            <!--      First Dev To show Title Card Likes <thead> in table      -->
+                            <div class="bg-sub shadow-input px-3 py-3 rounded-top-4">
+                                <div class="row mx-auto w-100">
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-16 mb-0 ps-4">Asset Name</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-16 mb-0">Owner Asset</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-16 mb-0">Added Date</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-16 mb-0">Asset type</h5>
+                                    </div>
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-16 mb-0 ps-4">Actions</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--      End This Dev                      -->
+                            <!--      All Dev in under for loop                      -->
+                            <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4">
+                                <div class="row mx-auto w-100">
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <img src="assets/images/adobe-xd.svg" width="18" class="align-middle " alt="">
+                                        <div class="d-inline-block max-w-75 text-start align-top ms-1">
+                                            <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Adobe xd</h5>
+                                            <span class="text-muted font-14 mb-0 text-truncate fw-400 ms-1 align-middle">2.3</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">Darrell Steward</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">2020-01-01</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0 ps-4"><img src="assets/images/library.svg" width="18" alt=""></h5>
+                                    </div>
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">
+                                            <a href="" class="mx-2"><img src="assets/images/show.svg" width="24" alt=""></a>
+                                            <a href="" class="mx-2"><img src="assets/images/edit.svg" width="16" alt=""></a>
+                                            <a href="" class="mx-2"><img src="assets/images/delete.svg" width="16" alt=""></a>
+                                        </h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4">
+                                <div class="row mx-auto w-100">
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <img src="assets/images/xampp.svg" width="18" class="align-middle " alt="">
+                                        <div class="d-inline-block max-w-75 text-start align-top ms-1">
+                                            <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Xampp Xampp Xampp</h5>
+                                            <span class="text-muted font-14 mb-0 text-truncate fw-400 ms-1 align-middle">2.3.10</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">Eleanor Pena</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">2020-02-02</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0 ps-4"><img src="assets/images/type-assets.svg" width="18" alt=""></h5>
+                                    </div>
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">
+                                            <a href="" class="mx-2"><img src="assets/images/show.svg" width="24" alt=""></a>
+                                            <a href="" class="mx-2"><img src="assets/images/edit.svg" width="16" alt=""></a>
+                                            <a href="" class="mx-2"><img src="assets/images/delete.svg" width="16" alt=""></a>
+                                        </h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4">
+                                <div class="row mx-auto w-100">
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <img src="assets/images/visual-studio.svg" width="18" class="align-middle " alt="">
+                                        <div class="d-inline-block max-w-75 text-start align-top ms-1">
+                                            <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Visual Studio </h5>
+                                            <span class="text-muted font-14 mb-0 text-truncate fw-400 ms-1 align-middle">2.3.10</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">Eleanor Pena</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">2020-02-02</h5>
+                                    </div>
+                                    <div class="col-md-2 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0 ps-4"><img src="assets/images/type-assets.svg" width="18" alt=""></h5>
+                                    </div>
+                                    <div class="col-md-3 my-2 my-md-auto text-start">
+                                        <h5 class="text-label font-14 mb-0">
+                                            <a href="" class="mx-2"><img src="assets/images/show.svg" width="24" alt=""></a>
+                                            <a href="" class="mx-2"><img src="assets/images/edit.svg" width="16" alt=""></a>
+                                            <a href="" class="mx-2"><img src="assets/images/delete.svg" width="16" alt=""></a>
+                                        </h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--      End Dev and for loop                      -->
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+</html>
