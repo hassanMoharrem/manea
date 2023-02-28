@@ -12,6 +12,7 @@
   --label:#F2F2F2;
   --sub-href: #797D90;
   --primary: #5E8BF6;
+  --success: #24C952;
   --bg-main: #1C1F2E;
   --bg-sub: #1F2336;
   --shadow-main: 0px 4px 8px rgba(11, 8, 8, 0.17);
@@ -50,6 +51,9 @@ body .text-label {
 body .text-muted {
   color: var(--sub);
 }
+body .text-success {
+  color: var(--success) !important;
+}
 body .font-17 {
   font-size: 17px;
 }
@@ -59,6 +63,9 @@ body .font-25 {
 body .font-10 {
   font-size: 10px;
   font-weight: 400;
+}
+body .font-12 {
+  font-size: 12px;
 }
 body .font-13 {
   font-size: 13px;
@@ -212,11 +219,17 @@ body main .width-calc .height-70 {
 body main .width-calc .height-100 {
   height: 100px;
 }
+body main .width-calc .max-w-85 {
+  max-width: 85%;
+}
 body main .width-calc .max-w-75 {
   max-width: 75%;
 }
 body main .width-calc .max-w-100 {
   max-width: 100%;
+}
+body main .width-calc .w-10 {
+  width: 10%;
 }
 body main .width-calc .w-80 {
   width: 80%;
@@ -301,6 +314,9 @@ body main .width-calc .nav-tabs .nav-item .nav-link {
   }
   body .w-15 {
     width: 20% !important;
+  }
+  body .w-10 {
+    width: 15%;
   }
   body .font-25 {
     font-size: 20px !important;

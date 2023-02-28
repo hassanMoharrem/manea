@@ -36,8 +36,8 @@
             <div class="text-center position-relative h-100 pb-2">
                 <a href="index.html" class="pt-50 d-block"><img src="assets/images/home.svg" width="21" alt=""></a>
                 <a href="all-asset.html" class="pt-50 d-block"><img src="assets/images/asset.svg" width="21" alt=""></a>
-                <a href="user-configuration.html" class="pt-50 d-block"><img src="assets/images/shield-active.svg" width="20" alt=""></a>
-                <a href="threats.html" class="pt-50 d-block"><img src="assets/images/bug.svg" width="20" alt=""></a>
+                <a href="user-configuration.html" class="pt-50 d-block"><img src="assets/images/shield.svg" width="20" alt=""></a>
+                <a href="threats.html" class="pt-50 d-block"><img src="assets/images/bug-active.svg" width="20" alt=""></a>
                 <a href="" class="pt-50 d-block"><img src="assets/images/global.svg" width="20" alt=""></a>
                 <a href="" class="pt-50 d-block"><img src="assets/images/support.svg" width="20" alt=""></a>
                 <a href="" class="pt-50 d-block"><img src="assets/images/report.svg" width="20" alt=""></a>
@@ -47,11 +47,10 @@
         <div class="width-calc ps-2 pt-4 pb-5">
             <div class="row w-100 mx-auto justify-content-center">
                 <div class="col-md-11">
-                    <nav aria-label="breadcrumb" class="mt-2 mb-3">
+                    <nav aria-label="breadcrumb" class="mt-0 mb-3">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item text-muted font-17 fw-400"><a href="#" class="">Asset</a></li>
-                            <li class="breadcrumb-item text-muted font-17 fw-400" aria-current="page">User Configuration Assets </li>
-                            <li class="breadcrumb-item active text-white font-17 fw-400" aria-current="page">Details</li>
+                            <li class="breadcrumb-item text-muted font-17 fw-400"><a href="#" class="">Threats</a></li>
+                            <li class="breadcrumb-item active text-white font-17 fw-400" aria-current="page">Threat Name Details</li>
                         </ol>
                     </nav>
                     <div class="mt-4">
@@ -178,32 +177,31 @@
                                             <div class="rounded-8 bg-sub shadow-card py-4 mb-30 px-4">
                                                 <div class="row mx-auto w-100">
                                                     <div class="col-3 text-center">
-                                                        <img src="assets/images/image-primary.svg" width="20" alt="">
-                                                        <h5 class="text-muted ms-1 align-middle font-16 d-inline-block mb-0">Assets</h5>
+
+                                                        <h5 class="text-muted ms-1 align-middle font-16 d-inline-block mb-0">Version</h5>
                                                     </div>
                                                     <div class="col-3 text-center">
-                                                        <h5 class="text-muted ms-1 align-middle font-16 d-inline-block mb-0">Threats</h5>
+                                                        <h5 class="text-muted ms-1 align-middle font-16 d-inline-block mb-0">Last version</h5>
                                                     </div>
                                                     <div class="col-3 text-center">
-                                                        <h5 class="text-muted ms-1 align-middle font-16 d-inline-block mb-0">No threats</h5>
+                                                        <h5 class="text-muted ms-1 align-middle font-16 d-inline-block mb-0">CVE</h5>
                                                     </div>
                                                     <div class="col-3 text-center">
-                                                        <img src="assets/images/checkmark.svg" width="20" alt="">
-                                                        <h5 class="text-muted ms-1 align-middle font-16 d-inline-block mb-0">last Scan</h5>
+                                                        <h5 class="text-muted ms-1 align-middle font-16 d-inline-block mb-0">Exploite</h5>
                                                     </div>
                                                 </div>
                                                 <div class="row mx-auto w-100 mt-3">
                                                     <div class="col-3 text-center">
-                                                        <h5 class="text-label ms-1 font-16 d-inline-block mb-0">12</h5>
+                                                        <h5 class="text-label ms-1 font-16 d-inline-block mb-0">data</h5>
                                                     </div>
                                                     <div class="col-3 text-center">
-                                                        <h5 class="text-label ms-1 align-middle font-16 d-inline-block mb-0">14</h5>
+                                                        <h5 class="text-label ms-1 align-middle font-16 d-inline-block mb-0">data</h5>
                                                     </div>
                                                     <div class="col-3 text-center">
-                                                        <h5 class="text-label ms-1 align-middle font-16 d-inline-block mb-0">12</h5>
+                                                        <h5 class="text-label ms-1 align-middle font-16 d-inline-block mb-0">data</h5>
                                                     </div>
                                                     <div class="col-3 text-center">
-                                                        <h5 class="text-label ms-1 align-middle font-16 d-inline-block mb-0">Since 11 h</h5>
+                                                        <h5 class="text-label ms-1 align-middle font-16 d-inline-block mb-0">data</h5>
                                                     </div>
                                                 </div>
 
@@ -211,180 +209,50 @@
                                             <div class="rounded-8 bg-sub shadow-card py-4 mb-30 px-4">
                                                 <div class="row mx-auto w-100">
                                                     <div class="col-md-6 my-2  text-start">
-                                                        <img src="assets/images/ip-muted.svg" width="15" alt="">
-                                                        <div class="d-inline-block align-top max-w-75 text-start">
-                                                            <h5 class="text-muted ms-1 font-16 mb-2">IP Address</h5>
-                                                            <span class="font-13 d-inline-block fw-400">192.168.112.1,</span>
-                                                            <span class="font-13 d-inline-block fw-400">192.168.201.1,</span>
-                                                            <span class="font-13 d-inline-block fw-400"> 192.168.10.39</span>
+                                                        <div class="text-start mb-3">
+                                                            <h5 class="text-muted ms-1 font-16">Number of versions : <span class="font-13 d-inline-block text-label fw-400">22</span></h5>
+                                                        </div>
+                                                        <div class="text-start mb-3">
+                                                            <h5 class="text-muted ms-1 font-16">Number of  Patches : <span class="font-13 d-inline-block text-label fw-400">22</span></h5>
+                                                        </div>
+                                                        <div class="text-start mb-3">
+                                                            <h5 class="text-muted ms-1 font-16">last threat : <span class="font-13 d-inline-block text-label fw-400">Name  of threat</span></h5>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6 my-2 text-start">
-                                                        <img src="assets/images/download.svg" width="12" alt="">
-                                                        <div class="d-inline-block align-top max-w-75 text-start">
-                                                            <h5 class="text-muted ms-1 font-16 mb-2">Operating system version</h5>
-                                                            <span class="font-13 d-inline-block fw-400">10.0.19044 N/A Build 19044</span>
+                                                        <div class="text-start mb-3">
+                                                            <h5 class="text-muted ms-1 font-16">Number of  CEVs : <span class="font-13 d-inline-block text-label fw-400">22</span></h5>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-md-6 mt-3 mb-2  text-start">
-                                                        <img src="assets/images/type-assets.svg" width="15" alt="">
-                                                        <div class="d-inline-block align-top max-w-75 text-start">
-                                                            <h5 class="text-muted ms-1 font-16 mb-2">Operating system</h5>
-                                                            <span class="font-13 d-inline-block fw-400">Microsoft Windows 10 Pro</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6 mt-3 mb-2 text-start">
-                                                        <img src="assets/images/plus.svg" width="12" alt="">
-                                                        <div class="d-inline-block align-top max-w-75 text-start">
-                                                            <h5 class="text-muted ms-1 font-16 mb-2">Added at</h5>
-                                                            <span class="font-13 d-inline-block fw-400">Since 13 hours</span>
+                                                        <div class="text-start mb-3">
+                                                            <h5 class="text-muted ms-1 font-16">Number of  exploite : <span class="font-13 d-inline-block text-label fw-400">22</span></h5>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <ul class="nav nav-tabs border-0 mt-4 bg-sub" id="myTab" role="tablist">
                                                 <li class="nav-item p-1 " role="presentation">
-                                                    <button class="nav-link rounded-card-scan text-label active" id="all-asset" data-bs-toggle="tab" data-bs-target="#assets" type="button" role="tab" aria-controls="assets" aria-selected="true">All Assets</button>
+                                                    <button class="nav-link rounded-card-scan text-label active" id="all-Cve" data-bs-toggle="tab" data-bs-target="#cve" type="button" role="tab" aria-controls="cve" aria-selected="true">CVE</button>
                                                 </li>
                                                 <li class="nav-item p-1 " role="presentation">
-                                                    <button class="nav-link rounded-card-scan text-label" id="Threat-assets" data-bs-toggle="tab" data-bs-target="#Threat" type="button" role="tab" aria-controls="archived" aria-selected="false">Threat</button>
+                                                    <button class="nav-link rounded-card-scan text-label" id="all-exploite" data-bs-toggle="tab" data-bs-target="#exploite" type="button" role="tab" aria-controls="exploite" aria-selected="false">Exploite</button>
                                                 </li>
                                                 <li class="nav-item p-1 " role="presentation">
-                                                    <button class="nav-link rounded-card-scan text-label" id="Report-assets" data-bs-toggle="tab" data-bs-target="#Report" type="button" role="tab" aria-controls="Report" aria-selected="false">Report</button>
+                                                    <button class="nav-link rounded-card-scan text-label" id="all-patch" data-bs-toggle="tab" data-bs-target="#patch" type="button" role="tab" aria-controls="patch" aria-selected="false">patch</button>
+                                                </li>
+                                                <li class="nav-item p-1 " role="presentation">
+                                                    <button class="nav-link rounded-card-scan text-label" id="all-report" data-bs-toggle="tab" data-bs-target="#report" type="button" role="tab" aria-controls="report" aria-selected="false">Report</button>
                                                 </li>
                                             </ul>
                                             <div class="tab-content mt-3" id="myTabContent">
-                                                <div class="tab-pane fade show active" id="assets" role="tabpanel" aria-labelledby="all-asset">
+                                                <div class="tab-pane fade show active" id="cve" role="tabpanel" aria-labelledby="all-Cve">
                                                     <!--      First Dev To show Title Card Likes <thead> in table      -->
                                                     <div class="bg-sub shadow-input px-3 py-3 rounded-top-4 overflow-auto">
                                                         <div class="d-flex mx-auto w-100">
-                                                            <div class="w-25 my-2 my-md-auto text-start">
-                                                                <h5 class="text-label font-16 mb-0 ps-md-4">Asset Name</h5>
-                                                            </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-16 mb-0">Owner Asset</h5>
-                                                            </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-16 mb-0">Added Date</h5>
-                                                            </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-16 mb-0">Asset type</h5>
-                                                            </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-16 mb-0 ps-md-4">Actions</h5>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <!--      End This Dev                      -->
-                                                    <!--      All Dev in under for loop                      -->
-                                                    <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4 overflow-auto">
-                                                        <div class="d-flex mx-auto w-100">
-                                                            <div class="w-25 my-2 my-md-auto text-start">
-                                                                <img src="assets/images/adobe-xd.svg" width="18" class="align-middle " alt="">
-                                                                <div class="d-inline-block max-w-75 text-start align-top ms-1">
-                                                                    <h5 class="text-label font-14 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Adobe xd</h5>
-                                                                    <span class="text-muted font-12 mb-0 text-truncate fw-400 ms-1 align-middle">2.3</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">Darrell Steward</h5>
-                                                            </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">2020-01-01</h5>
-                                                            </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0 ps-4"><img src="assets/images/library.svg" width="18" alt=""></h5>
-                                                            </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">
-                                                                    <a href="" class="mx-2"><img src="assets/images/show.svg" width="24" alt=""></a>
-                                                                    <a href="" class="mx-2"><img src="assets/images/edit.svg" width="16" alt=""></a>
-                                                                    <a href="" class="mx-2"><img src="assets/images/delete.svg" width="16" alt=""></a>
-                                                                </h5>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4 overflow-auto">
-                                                        <div class="d-flex mx-auto w-100">
-                                                            <div class="w-25 my-2 my-md-auto text-start">
-                                                                <img src="assets/images/xampp.svg" width="18" class="align-middle " alt="">
-                                                                <div class="d-inline-block max-w-75 text-start align-top ms-1">
-                                                                    <h5 class="text-label font-14 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Xampp Xampp Xampp</h5>
-                                                                    <span class="text-muted font-12 mb-0 text-truncate fw-400 ms-1 align-middle">2.3</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">Eleanor Pena</h5>
-                                                            </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">2020-02-02</h5>
-                                                            </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0 ps-4"><img src="assets/images/type-assets.svg" width="18" alt=""></h5>
-                                                            </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">
-                                                                    <a href="" class="mx-2"><img src="assets/images/show.svg" width="24" alt=""></a>
-                                                                    <a href="" class="mx-2"><img src="assets/images/edit.svg" width="16" alt=""></a>
-                                                                    <a href="" class="mx-2"><img src="assets/images/delete.svg" width="16" alt=""></a>
-                                                                </h5>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4 overflow-auto">
-                                                        <div class="d-flex mx-auto w-100">
-                                                            <div class="w-25 my-2 my-md-auto text-start">
-                                                                <img src="assets/images/visual-studio.svg" width="18" class="align-middle " alt="">
-                                                                <div class="d-inline-block max-w-75 text-start align-top ms-1">
-                                                                    <h5 class="text-label font-14 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Visual Studio </h5>
-                                                                    <span class="text-muted font-12 mb-0 text-truncate fw-400 ms-1 align-middle">2.3</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">Eleanor Pena</h5>
-                                                            </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">2020-02-02</h5>
-                                                            </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0 ps-4"><img src="assets/images/type-assets.svg" width="18" alt=""></h5>
-                                                            </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">
-                                                                    <a href="" class="mx-2"><img src="assets/images/show.svg" width="24" alt=""></a>
-                                                                    <a href="" class="mx-2"><img src="assets/images/edit.svg" width="16" alt=""></a>
-                                                                    <a href="" class="mx-2"><img src="assets/images/delete.svg" width="16" alt=""></a>
-                                                                </h5>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <!--      End Dev and for loop                      -->
-                                                </div>
-                                                <div class="tab-pane fade" id="Threat" role="tabpanel" aria-labelledby="Threat-assets">
-                                                    <!--      First Dev To show Title Card Likes <thead> in table      -->
-                                                    <div class="bg-sub shadow-input px-3 py-3 rounded-top-4 overflow-auto">
-                                                        <div class="d-flex mx-auto w-100">
-                                                            <div class="w-25 my-2 my-md-auto text-start">
+                                                            <div class="w-50 my-2 my-md-auto text-start">
                                                                 <h5 class="text-label font-16 mb-0">Asset Name</h5>
                                                             </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-16 mb-0">Threat</h5>
-                                                            </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
+                                                            <div class="w-50 my-2 my-md-auto text-start ps-2">
                                                                 <h5 class="text-label font-16 mb-0">High level</h5>
-                                                            </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2 ">
-                                                                <h5 class="text-label font-16 mb-0">Added Date</h5>
-                                                            </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2 ">
-                                                                <h5 class="text-label font-16 mb-0">Added Date</h5>
-                                                            </div>
-                                                            <div class="w-10 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-16 mb-0">Actions</h5>
                                                             </div>
 
                                                         </div>
@@ -393,120 +261,167 @@
                                                     <!--      All Dev in under for loop                      -->
                                                     <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4 overflow-auto">
                                                         <div class="d-flex mx-auto w-100">
-                                                            <div class="w-25 my-2 my-md-auto text-start">
+                                                            <div class="w-50 my-2 my-md-auto text-start">
                                                                 <img src="assets/images/adobe-xd.svg" width="18" class="align-middle " alt="">
                                                                 <div class="d-inline-block max-w-75 text-start align-top ms-1">
-                                                                    <h5 class="text-label font-14 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Adobe xd</h5>
+                                                                    <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Adobe xd</h5>
                                                                     <span class="text-muted font-12 mb-0 text-truncate fw-400 ms-1 align-middle">2.3</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2">
-                                                                <img src="assets/images/cloud.svg" width="18" class="ms-1" alt="">
-                                                                <img src="assets/images/icon-devices.svg" width="18" class="ms-1" alt="">
+                                                            <div class="w-50 my-2 my-md-auto text-start ps-2">
+                                                                <h5 class="text-label font-16 mb-0">Medium  40%</h5>
                                                             </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <div class="progress-content pe-2">
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <h5 class="text-white font-12 mb-1">Medium</h5>
-                                                                        <h5 class="text-white font-12 mb-1">40%</h5>
-                                                                    </div>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar rounded-right-3 bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">2020-01-01</h5>
-                                                            </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">2020-01-01</h5>
-                                                            </div>
-                                                            <div class="w-10 my-2 my-md-auto text-start ps-2">
-                                                                <a href="threat-details.html" class="mx-1"><img src="assets/images/show.svg" width="22" alt=""></a>
-                                                                <a href="" class="mx-1"><img src="assets/images/icon_report.svg" width="18" alt=""></a>
-                                                            </div>
-
                                                         </div>
                                                     </div>
-                                                    <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4 overflow-auto">
+                                                    <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4">
                                                         <div class="d-flex mx-auto w-100">
-                                                            <div class="w-25 my-2 my-md-auto text-start">
-                                                                <img src="assets/images/xampp.svg" width="18" class="align-middle " alt="">
+                                                            <div class="w-50 my-2 my-md-auto text-start">
+                                                                <img src="assets/images/adobe-xd.svg" width="18" class="align-middle " alt="">
                                                                 <div class="d-inline-block max-w-75 text-start align-top ms-1">
-                                                                    <h5 class="text-label font-14 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Xampp Xampp Xampp</h5>
+                                                                    <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Adobe xd</h5>
                                                                     <span class="text-muted font-12 mb-0 text-truncate fw-400 ms-1 align-middle">2.3</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2">
-                                                                <img src="assets/images/cloud.svg" width="18" class="ms-1" alt="">
-                                                                <img src="assets/images/icon-devices.svg" width="18" class="ms-1" alt="">
+                                                            <div class="w-50 my-2 my-md-auto text-start ps-2">
+                                                                <h5 class="text-label font-16 mb-0">Medium  40%</h5>
                                                             </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <div class="progress-content pe-2">
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <h5 class="text-white font-12 mb-1">Low</h5>
-                                                                        <h5 class="text-white font-12 mb-1">10%</h5>
-                                                                    </div>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar rounded-right-3 bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">2020-01-01</h5>
-                                                            </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">2020-01-01</h5>
-                                                            </div>
-
-                                                            <div class="w-10 my-2 my-md-auto text-start ps-2">
-                                                                    <a href="threat-details.html" class="mx-1"><img src="assets/images/show.svg" width="22" alt=""></a>
-                                                                    <a href="" class="mx-1"><img src="assets/images/icon_report.svg" width="18" alt=""></a>
-                                                            </div>
-
                                                         </div>
                                                     </div>
-                                                    <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4 overflow-auto">
+                                                    <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4">
                                                         <div class="d-flex mx-auto w-100">
-                                                            <div class="w-25 my-2 my-md-auto text-start">
-                                                                <img src="assets/images/visual-studio.svg" width="18" class="align-middle " alt="">
+                                                            <div class="w-50 my-2 my-md-auto text-start">
+                                                                <img src="assets/images/adobe-xd.svg" width="18" class="align-middle " alt="">
                                                                 <div class="d-inline-block max-w-75 text-start align-top ms-1">
-                                                                    <h5 class="text-label font-14 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Visual Studio</h5>
+                                                                    <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Adobe xd</h5>
                                                                     <span class="text-muted font-12 mb-0 text-truncate fw-400 ms-1 align-middle">2.3</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2">
-                                                                <img src="assets/images/cloud.svg" width="18" class="ms-1" alt="">
-                                                                <img src="assets/images/icon-devices.svg" width="18" class="ms-1" alt="">
+                                                            <div class="w-50 my-2 my-md-auto text-start ps-2">
+                                                                <h5 class="text-label font-16 mb-0">Medium  40%</h5>
                                                             </div>
-                                                            <div class="w-20 my-2 my-md-auto text-start ps-2">
-                                                                <div class="progress-content pe-2">
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <h5 class="text-white font-12 mb-1">Critical</h5>
-                                                                        <h5 class="text-white font-12 mb-1">40%</h5>
-                                                                    </div>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar rounded-right-3 bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">2020-01-01</h5>
-                                                            </div>
-                                                            <div class="w-15 my-2 my-md-auto text-start ps-2">
-                                                                <h5 class="text-label font-14 mb-0">2020-01-01</h5>
-                                                            </div>
-
-                                                            <div class="w-10 my-2 my-md-auto text-start ps-2">
-                                                                <a href="threat-details.html" class="mx-1"><img src="assets/images/show.svg" width="22" alt=""></a>
-                                                                <a href="" class="mx-1"><img src="assets/images/icon_report.svg" width="18" alt=""></a>
-                                                            </div>
-
                                                         </div>
                                                     </div>
                                                     <!--      End Dev and for loop                      -->
                                                 </div>
-                                                <div class="tab-pane fade" id="Report" role="tabpanel" aria-labelledby="Report-assets">
+                                                <div class="tab-pane fade" id="exploite" role="tabpanel" aria-labelledby="all-exploite">
+                                                    <!--      First Dev To show Title Card Likes <thead> in table      -->
+                                                    <div class="bg-sub shadow-input px-3 py-3 rounded-top-4 overflow-auto">
+                                                        <div class="d-flex mx-auto w-100">
+                                                            <div class="w-50 my-2 my-md-auto text-start">
+                                                                <h5 class="text-label font-16 mb-0">Asset Name</h5>
+                                                            </div>
+                                                            <div class="w-50 my-2 my-md-auto text-start ps-2">
+                                                                <h5 class="text-label font-16 mb-0">Status</h5>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <!--      End This Dev                      -->
+                                                    <!--      All Dev in under for loop                      -->
+                                                    <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4 overflow-auto">
+                                                        <div class="d-flex mx-auto w-100">
+                                                            <div class="w-50 my-2 my-md-auto text-start">
+                                                                <img src="assets/images/adobe-xd.svg" width="18" class="align-middle " alt="">
+                                                                <div class="d-inline-block max-w-75 text-start align-top ms-1">
+                                                                    <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Adobe xd</h5>
+                                                                    <span class="text-muted font-12 mb-0 text-truncate fw-400 ms-1 align-middle">2.3</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-50 my-2 my-md-auto text-start ps-2">
+                                                                <h5 class="text-success font-16 mb-0">Updated</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4">
+                                                        <div class="d-flex mx-auto w-100">
+                                                            <div class="w-50 my-2 my-md-auto text-start">
+                                                                <img src="assets/images/adobe-xd.svg" width="18" class="align-middle " alt="">
+                                                                <div class="d-inline-block max-w-75 text-start align-top ms-1">
+                                                                    <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Adobe xd</h5>
+                                                                    <span class="text-muted font-12 mb-0 text-truncate fw-400 ms-1 align-middle">2.3</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-50 my-2 my-md-auto text-start ps-2">
+                                                                <h5 class="text-danger font-16 mb-0">Unupdated</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4">
+                                                        <div class="d-flex mx-auto w-100">
+                                                            <div class="w-50 my-2 my-md-auto text-start">
+                                                                <img src="assets/images/adobe-xd.svg" width="18" class="align-middle " alt="">
+                                                                <div class="d-inline-block max-w-75 text-start align-top ms-1">
+                                                                    <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Adobe xd</h5>
+                                                                    <span class="text-muted font-12 mb-0 text-truncate fw-400 ms-1 align-middle">2.3</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-50 my-2 my-md-auto text-start ps-2">
+                                                                <h5 class="text-success font-16 mb-0">Updated</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--      End Dev and for loop                      -->
+                                                </div>
+                                                <div class="tab-pane fade" id="patch" role="tabpanel" aria-labelledby="all-patch">
+                                                    <!--      First Dev To show Title Card Likes <thead> in table      -->
+                                                    <div class="bg-sub shadow-input px-3 py-3 rounded-top-4 overflow-auto">
+                                                        <div class="d-flex mx-auto w-100">
+                                                            <div class="w-50 my-2 my-md-auto text-start">
+                                                                <h5 class="text-label font-16 mb-0">Asset Name</h5>
+                                                            </div>
+                                                            <div class="w-50 my-2 my-md-auto text-start ps-2">
+                                                                <h5 class="text-label font-16 mb-0">Status</h5>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <!--      End This Dev                      -->
+                                                    <!--      All Dev in under for loop                      -->
+                                                    <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4 overflow-auto">
+                                                        <div class="d-flex mx-auto w-100">
+                                                            <div class="w-50 my-2 my-md-auto text-start">
+                                                                <img src="assets/images/adobe-xd.svg" width="18" class="align-middle " alt="">
+                                                                <div class="d-inline-block max-w-75 text-start align-top ms-1">
+                                                                    <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Adobe xd</h5>
+                                                                    <span class="text-muted font-12 mb-0 text-truncate fw-400 ms-1 align-middle">2.3</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-50 my-2 my-md-auto text-start ps-2">
+                                                                <h5 class="text-success font-16 mb-0">Updated</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4">
+                                                        <div class="d-flex mx-auto w-100">
+                                                            <div class="w-50 my-2 my-md-auto text-start">
+                                                                <img src="assets/images/adobe-xd.svg" width="18" class="align-middle " alt="">
+                                                                <div class="d-inline-block max-w-75 text-start align-top ms-1">
+                                                                    <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Adobe xd</h5>
+                                                                    <span class="text-muted font-12 mb-0 text-truncate fw-400 ms-1 align-middle">2.3</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-50 my-2 my-md-auto text-start ps-2">
+                                                                <h5 class="text-danger font-16 mb-0">Unupdated</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-sub shadow-input px-3 py-3 my-4 rounded-top-4">
+                                                        <div class="d-flex mx-auto w-100">
+                                                            <div class="w-50 my-2 my-md-auto text-start">
+                                                                <img src="assets/images/adobe-xd.svg" width="18" class="align-middle " alt="">
+                                                                <div class="d-inline-block max-w-75 text-start align-top ms-1">
+                                                                    <h5 class="text-label font-16 mb-0 max-w-75 text-truncate fw-400 mb-1 d-inline-block align-middle">Adobe xd</h5>
+                                                                    <span class="text-muted font-12 mb-0 text-truncate fw-400 ms-1 align-middle">2.3</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-50 my-2 my-md-auto text-start ps-2">
+                                                                <h5 class="text-success font-16 mb-0">Updated</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--      End Dev and for loop                      -->
+                                                </div>
+                                                <div class="tab-pane fade" id="report" role="tabpanel" aria-labelledby="all-report">
                                                     <div class="row mx-auto w-100">
                                                         <div class="col-md-3 my-2">
                                                             <div class="px-2 py-4 bg-sub shadow-card rounded-card-scan text-center h-100">
@@ -550,46 +465,46 @@
                                                         </div>
                                                         <div class="col-md-3 my-2">
                                                             <div class="rounded-card-scan bg-sub px-3 py-4 text-start h-100">
-                                                                    <h5 class="font-13 mb-0">Warning levels</h5>
-                                                                    <div class="pt-3">
-                                                                        <div class="progress-content">
-                                                                            <div class="d-flex justify-content-between">
-                                                                                <h5 class="text-muted font-13">Low</h5>
-                                                                                <h5 class="text-muted font-13">10</h5>
-                                                                            </div>
-                                                                            <div class="progress mb-30">
-                                                                                <div class="progress-bar rounded-right-3 bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                            </div>
+                                                                <h5 class="font-13 mb-0">Warning levels</h5>
+                                                                <div class="pt-3">
+                                                                    <div class="progress-content">
+                                                                        <div class="d-flex justify-content-between">
+                                                                            <h5 class="text-muted font-13">Low</h5>
+                                                                            <h5 class="text-muted font-13">10</h5>
                                                                         </div>
-                                                                        <div class="progress-content">
-                                                                            <div class="d-flex justify-content-between">
-                                                                                <h5 class="text-muted font-13">Medium</h5>
-                                                                                <h5 class="text-muted font-13">2</h5>
-                                                                            </div>
-                                                                            <div class="progress mb-30">
-                                                                                <div class="progress-bar rounded-right-3 bg-warning" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                            </div>
+                                                                        <div class="progress mb-30">
+                                                                            <div class="progress-bar rounded-right-3 bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                                                         </div>
-                                                                        <div class="progress-content">
-                                                                            <div class="d-flex justify-content-between">
-                                                                                <h5 class="text-muted font-13">High</h5>
-                                                                                <h5 class="text-muted font-13">12</h5>
-                                                                            </div>
-                                                                            <div class="progress mb-30">
-                                                                                <div class="progress-bar rounded-right-3 bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                            </div>
+                                                                    </div>
+                                                                    <div class="progress-content">
+                                                                        <div class="d-flex justify-content-between">
+                                                                            <h5 class="text-muted font-13">Medium</h5>
+                                                                            <h5 class="text-muted font-13">2</h5>
                                                                         </div>
-                                                                        <div class="progress-content">
-                                                                            <div class="d-flex justify-content-between">
-                                                                                <h5 class="text-muted font-13">Critical</h5>
-                                                                                <h5 class="text-muted font-13">8</h5>
-                                                                            </div>
-                                                                            <div class="progress">
-                                                                                <div class="progress-bar rounded-right-3 bg-very-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                            </div>
+                                                                        <div class="progress mb-30">
+                                                                            <div class="progress-bar rounded-right-3 bg-warning" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="progress-content">
+                                                                        <div class="d-flex justify-content-between">
+                                                                            <h5 class="text-muted font-13">High</h5>
+                                                                            <h5 class="text-muted font-13">12</h5>
+                                                                        </div>
+                                                                        <div class="progress mb-30">
+                                                                            <div class="progress-bar rounded-right-3 bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="progress-content">
+                                                                        <div class="d-flex justify-content-between">
+                                                                            <h5 class="text-muted font-13">Critical</h5>
+                                                                            <h5 class="text-muted font-13">8</h5>
+                                                                        </div>
+                                                                        <div class="progress">
+                                                                            <div class="progress-bar rounded-right-3 bg-very-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                            </div>
                                                         </div>
 
                                                     </div>
