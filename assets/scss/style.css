@@ -51,6 +51,9 @@ body .text-label {
 body .text-muted {
   color: var(--sub);
 }
+body .text-sub-muted {
+  color: #A8AEC7;
+}
 body .text-success {
   color: var(--success) !important;
 }
@@ -113,6 +116,9 @@ body .bg-main {
 body .rounded-8 {
   border-radius: 8px !important;
 }
+body .rounded-10 {
+  border-radius: 10px !important;
+}
 body .btn:hover {
   color: var(--label);
 }
@@ -169,6 +175,17 @@ body main .pb-50 {
 }
 body main .mb-30 {
   margin-bottom: 30px;
+}
+body main .border-gradient {
+  background: linear-gradient(#5A29D6 0%, #3859EE 100%);
+  padding: 0;
+}
+body main .py-9px {
+  padding-top: 10px;
+  padding-bottom: 9px;
+}
+body main .margin-2px {
+  margin: 2px;
 }
 body main .width-calc {
   background-color: var(--bg-main);
@@ -240,6 +257,9 @@ body main .width-calc .width-85 {
 body main .width-calc .w-35 {
   width: 35%;
 }
+body main .width-calc .w-65 {
+  width: 65%;
+}
 body main .width-calc .height-85 {
   height: 85px;
 }
@@ -248,6 +268,15 @@ body main .width-calc .w-20 {
 }
 body main .width-calc .w-15 {
   width: 15%;
+}
+body main .width-calc .w-17 {
+  width: 17%;
+}
+body main .width-calc .w-18 {
+  width: 18%;
+}
+body main .width-calc .w-22 {
+  width: 22%;
 }
 body main .width-calc .progress {
   height: 5px;
